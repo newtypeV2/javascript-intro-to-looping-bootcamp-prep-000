@@ -44,7 +44,8 @@ describe('loops', () => {
   describe('whileLoop(n)', () => {
     it('counts down from n to 0', () => {
       const spy = chai.spy.on(console, 'log')
-      const n = Math.floor(Math.random() * 100)
+      //const n = Math.floor(Math.random() * 100)
+      const n = 15
 
       expect(whileLoop(n)).to.equal('done')
       expect(spy).to.have.been.called.exactly(n)
